@@ -1,0 +1,27 @@
+.navbar {
+    padding: 30px 50px;
+    display: flex;
+    place-content: center space-between;
+}
+
+.logo-img img {
+    width: 40px;
+    object-fit: contain;
+}
+
+.navbar-items {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+}
+
+.navbar-items  li{
+    display: inline;
+    list-style-type: none;
+    margin: 10px;
+}
+.navbar-items > li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
