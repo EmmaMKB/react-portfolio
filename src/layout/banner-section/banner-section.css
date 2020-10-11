@@ -5,13 +5,20 @@
 }
 
 .banner-section > .content {
-    border-bottom: 4px solid #282c34;
     display: flex;
     place-content: center center;
     flex-direction: column;
     float: right;
     margin-left: 650px;
     padding-bottom: 15px;
+}
+
+.banner-section > .content::after {
+    content: '';
+    background: #707070;
+    height: 7px;
+    width: 50%;
+    margin-top: 20px;
 }
 
 .banner-section > .content > h1 {
