@@ -8,7 +8,7 @@ const NavBar = () => {
                 <img src={require("../../assets/images/logo.png")} alt=""/>
             </div>
             <nav className="navbar-items">
-                <li className="navbar-link">
+                <li className="navbar-link active">
                     <a href="#">Home</a>
                 </li>
                 <li className="navbar-link">
