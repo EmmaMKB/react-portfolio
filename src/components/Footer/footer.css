@@ -1,0 +1,26 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 196vh;
+    margin: auto;
+}
+
+.footer > .social {
+    display: flex;
+    flex-direction: row;
+    place-content: center center;
+}
+
+.footer > .social li {
+    list-style-type: none;
+    margin: 0 40px;
+}
+
+.footer > .social li a {
+    color: #FF8F20;
+    text-decoration: none;
+}
+
+.footer > .social li a:hover{
+    color: #8d4a07;
+}
