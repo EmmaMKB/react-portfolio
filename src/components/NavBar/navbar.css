@@ -1,4 +1,5 @@
 .navbar {
+    position: sticky;
     padding: 30px 50px;
     display: flex;
     place-content: center space-between;
@@ -42,4 +43,22 @@
 
 .navbar-link.active a{
     color: #FF8F20;
+}
+
+.navbar.dark .navbar-items > li > a  {
+    color: #000;
+}
+
+.navbar.dark .navbar-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width .3s;
+}
+
+.navbar.dark .navbar-link:hover::after {
+    width: 100%;
+    transition: width .3s;
 }

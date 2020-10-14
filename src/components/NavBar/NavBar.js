@@ -1,11 +1,20 @@
 import React from "react";
 import "./navbar.css";
 
-const NavBar = () => {
+const NavBar = ({dark}) => {
+    const darkMode = dark ? "dark" : dark;
+    const logoFile = dark ? '../../assets/images/logo.png' : "../../assets/images/logo-black.png"
+    const theme = {
+        logo: "../../assets/images/logo.png"
+    }
     return(
-        <div className="navbar">
+        <div className={`navbar ${darkMode}`}>
             <div className="logo-img">
-                <img src={require("../../assets/images/logo.png")} alt=""/>
+                {!dark ? (
+                    <img src={require("../../assets/images/logo.png")} alt="mkb-logo"/>
+                ) : (
+                    <img src={require("../../assets/images/logo-black.png")} alt="mkb-logo"/>
+                )}
             </div>
             <nav className="navbar-items">
                 <li className="navbar-link active">
